@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>premnath database</title>
+</head>
+<body>
+<center>
+    <h1>Simple Database Management System</h1>
+    <h1>Please Enter Your Details</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        {%for data in datas%}
+        <tr>
+            <td>{{data.ID}}</td>
+            <td>{{data.Name}}</td>
+            <td>{{data.Age}}</td>
+            <td>{{data.City}}</td>
+            <td></td>
+
+            <td></td>
+
+        </tr>
+    </table>
+</center>
+</body>
+</html>
